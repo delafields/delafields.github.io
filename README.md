@@ -8,7 +8,9 @@ This portfolio is a compilation of notebooks & side projects I've created for da
 Not Data Science in the traditional sense (honestly more of a front-end project) but I created this React app, [Favoritify](https://favoritify.herokuapp.com/), that polls the Spotify API for a user's top music and displays a personalized dashboard of visualizations. Includes top tracks/genres/artists, how popular they are globally on average, the typical auditory features of your music, and more. Honestly, it's pretty sweet. [Code here](https://github.com/delafields/Favoritify). *Not being monitored - if broken please send me a note. All that being said, please give it a try!*
 
 ## Data Visualizations
-Follow the link [here](https://github.com/delafields/data_visualizations) here for my repo of some data viz projects
+Follow the link [here](https://github.com/delafields/data_visualizations) here for my repo of some data viz projects.
+* Highlights
+    * [My Jump Scares viz](https://www.reddit.com/r/dataisbeautiful/comments/dei68x/battle_dataviz_battle_for_the_month_of_october/f3vp452/?utm_source=share&utm_medium=web2x) that won the October r/dataisbeautiful [competition](https://www.reddit.com/r/dataisbeautiful/comments/drgz68/battle_dataviz_battle_for_the_month_of_november/).
 
 ## Data exploration and analysis
 
