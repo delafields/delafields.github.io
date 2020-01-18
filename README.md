@@ -32,10 +32,11 @@ Link to project [here](https://github.com/delafields/data-projects/tree/master/c
 
 ### EPL Transfers ⚽
 **Does spending = winning?**
+![Spend vs. Rank](plots/epl-transfers/spend_vs_rank.png)
 
-Contains transfer data and year-end results for the English Premier League from the 1992-93 season through 2018-19.
+Contains transfer data and scraped year-end results for the English Premier League from the 1992-93 season through 2018-19.
 
-Link to project [here](https://github.com/delafields/data-projects/tree/master/epl-transfers)
+A quick analysis of the data can be found on my [wesite](https://www.jfields.me/blog/the-epl-s-modern-transfer-market-in-data). Link to full project and more cool plots [here](https://github.com/delafields/data-projects/tree/master/epl-transfers).
 
 ### Big 4 League Attendance 🏒🏀🏈⚾
 **Are people leaving the couch?**
@@ -45,9 +46,17 @@ Contains attendance data for the Big 4 US sports leagues from 2001-2019 (NBA, NF
 Link to project [here](https://github.com/delafields/data-projects/tree/master/big4league-attendance)
 
 ## Data Visualizations
-Follow the link [here](https://github.com/delafields/data_visualizations) here for my repo of some data viz projects.
-* Highlights
-    * [My Jump Scares viz](https://www.reddit.com/r/dataisbeautiful/comments/dei68x/battle_dataviz_battle_for_the_month_of_october/f3vp452/?utm_source=share&utm_medium=web2x) that won the October r/dataisbeautiful [competition](https://www.reddit.com/r/dataisbeautiful/comments/drgz68/battle_dataviz_battle_for_the_month_of_november/).
+**[500 Jump Scares](https://www.reddit.com/r/dataisbeautiful/comments/dei68x/battle_dataviz_battle_for_the_month_of_october/f3vp452/?utm_source=share&utm_medium=web2x), my viz that won the October 2019 r/dataisbeautiful [competition](https://www.reddit.com/r/dataisbeautiful/comments/drgz68/battle_dataviz_battle_for_the_month_of_november/)**
+
+![2019's Scaries](plots/500jumps/scary_dots.png)
+
+This was created for the October 2019 r/DataIsBeautiful DataViz Battle which centered around visualizing the Jump-Scares for over 500 horror, thriller, and sci-fi movies. I chose to only include 2019 here as this visualization lends itself to a smaller subset of data. Inspired by [aaron penne](https://github.com/aaronpenne/data_visualization/blob/master/ceo_compensation/dot_pairs_ceo_compensation.py)'s dot pairs viz.
+
+![All Scaries](plots/500jumps/scary_swarm.png)
+
+This chart shows a larger trend: More jump scares = a higher jump scare rating. Eyeballing the colors alone, it seems that less jumps (count and rating) translates to a higher IMDB score. **Note: this was the winner.**
+
+Code: 2019 dot-pair [here](code/500/scary_dots.py) and all-movie swarm plot [here](code/500jumps/scary_swarm.py).
 
 ## Problem-based
 
