@@ -36,7 +36,7 @@ Link to project [here](https://github.com/delafields/data-projects/tree/master/c
 
 Contains transfer data and scraped year-end results for the English Premier League from the 1992-93 season through 2018-19.
 
-A quick analysis of the data can be found on my [wesite](https://www.jfields.me/blog/the-epl-s-modern-transfer-market-in-data). Link to full project and more cool plots [here](https://github.com/delafields/data-projects/tree/master/epl-transfers).
+I analyzed the modern transfer market [here](https://www.jfields.me/blog/are-premier-league-teams-spending-wisely). Some more visuals can be found on [website](https://www.jfields.me/blog/the-epl-s-modern-transfer-market-in-data). Link to full project and more cool plots [here](https://github.com/delafields/data-projects/tree/master/epl-transfers).
 
 ### Big 4 League Attendance 🏒🏀🏈⚾
 **Are people leaving the couch?**
