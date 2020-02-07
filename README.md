@@ -9,6 +9,14 @@ Not Data Science in the traditional sense (honestly more of a front-end project)
 
 ## Data Exploration and Analysis
 
+## Will changing your jersey color win you championships? 🎨
+**An investigation into the colors with the most sports success.**
+![league winner colors](plots/sports-color-success/wolfram_per_league.png)
+
+Data around sports team's primary/secondary colors & championships won. Leagues included: NFL, NBA, MLB, NHL, EPL, La Liga, Serie A, NCAAF, NCAAB
+
+Analysis outlined in a blog post [here](https://www.jfields.me/blog/does-wearing-red-give-you-a-competitive-advantage). You can find the code and data [here](https://github.com/delafields/data-projects/tree/master/sports-color-success).
+
 ### Movie budgets 🎥
 **Who made the most on the smallest budget? What actors rake in the most dough?**
 
