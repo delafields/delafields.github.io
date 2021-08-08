@@ -1,9 +1,9 @@
 # Jeremy Fields's Data Science Portfolio
 
-Check out some analyses, notebooks, machine learning and general data projects below
+Analyses, notebooks, machine learning and general data projects below 👇
 
 ## Data Exploration and Analysis
----
+
 ### Does the color of your jersey give you an advantage? 🎨
 **An investigation into the colors with the most sports success.** <sub><sup>(Python, seaborn)</sup></sub>
 ![league winner colors](sports-color-success/plots/wolfram_per_league.png)
@@ -51,7 +51,7 @@ Link to project [here](big4league-attendance/README.md)
 <br/>
 
 ## Data Visualizations
----
+
 **[500 Jump Scares](https://www.reddit.com/r/dataisbeautiful/comments/dei68x/battle_dataviz_battle_for_the_month_of_october/f3vp452/?utm_source=share&utm_medium=web2x), my viz that won the October 2019 r/dataisbeautiful [competition](https://www.reddit.com/r/dataisbeautiful/comments/drgz68/battle_dataviz_battle_for_the_month_of_november/)**
 
 ![2019's Scaries](visualizations/500jumps/plots/scary_dots.png)
@@ -67,7 +67,7 @@ Code: 2019 dot-pair [here](visualizations/500jumps/scary_dots.py) and all-movie 
 <br/>
 
 ## Kaggle kernels
----
+
 ### Categorical Feature Encoding Challenge
 This challenge involved taking a data set solely comprised of categorical features and encoding them while capturing as much useful signal as possible. In this [kernel](https://www.kaggle.com/delafields/a-thorough-guide-on-categorical-feature-encoding) I implemented a thorough range of encoding techniques including feature hashing, likelihood encoding, and sin/cos transforms.
 
@@ -77,6 +77,6 @@ This challenge involved taking a data set solely comprised of categorical featur
 ## Stand-alone Apps
 
 ### Favoritify
-Not Data Science in the traditional sense (honestly more of a front-end project) but I created this React app, [Favoritify](https://favoritify.herokuapp.com/), that polls the Spotify API for a user's top music and displays a personalized dashboard of visualizations. Includes top tracks/genres/artists, how popular they are globally on average, the typical auditory features of your music, and more. Honestly, it's pretty sweet. [Code here](https://github.com/delafields/Favoritify). *Not being monitored - if broken please send me a note. That being said, please give it a try!*
+Not Data Science in the traditional sense (honestly more of a front-end project) but I created this React app, [Favoritify](https://favoritify.herokuapp.com/), that polls the Spotify API for a user's top music and displays a personalized dashboard of visualizations. Includes top tracks/genres/artists, how popular they are globally on average, the typical auditory features of your music, and more. [Code here](https://github.com/delafields/Favoritify). *Not being monitored - if broken please send me a note. That being said, please give it a try!*
 
 ## Kaggle competitions
