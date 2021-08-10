@@ -16,3 +16,5 @@ Attendance figures can be found in the `data/` folder, there's an excel doc for 
     * `TOTAL`: total attendance num
     * `AVG`: average attendance per game
     * `PCT`: percent compacity  
+
+Also, `data/champions_per_year.xlsx` contains league champions from 2001-2019
