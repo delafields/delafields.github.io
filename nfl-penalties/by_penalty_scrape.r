@@ -98,7 +98,7 @@ base_url <- "https://www.nflpenalties.com/penalty/"
 url_param <- "?year="
 
 # a list of valid years
-years = c('2009','2010','2011','2012','2013', '2014','2015','2016','2017','2018')
+years = c('2009','2010','2011','2012','2013', '2014','2015','2016','2017','2018', '2019')
 
 # penalty lists for getting yardage
 all_penalties <- c('defensive-pass-interference','illegal-touch-kick','intentional-grounding','illegal-use-of-hands','fair-catch-interference','illegal-blindside-block','clipping','low-block','unnecessary-roughness','roughing-the-passer','face-mask-15-yards','unsportsmanlike-conduct','taunting','horse-collar-tackle','chop-block','disqualification','roughing-the-kicker','offensive-holding','illegal-block-above-the-waist','offensive-pass-interference','tripping','illegal-forward-pass','illegal-touch-pass','defensive-delay-of-game','false-start','defensive-holding','defensive-offside','neutral-zone-infraction','delay-of-game','illegal-formation','illegal-shift','encroachment','illegal-contact','ineligible-downfield-pass','offside-on-free-kick','illegal-motion','illegal-substitution','ineligible-downfield-kick','running-into-the-kicker')
@@ -117,7 +117,7 @@ five_yard_penalties <- c('illegal-forward-pass','illegal-touch-pass','defensive-
 ####    EXECUTION    ####
 #########################
 
-file_name = 'by_penalty.xlsx'
+file_name = 'data/by_penalty.xlsx'
 
 # create a blank workbook
 wb <- createWorkbook()

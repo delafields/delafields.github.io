@@ -13,13 +13,13 @@ library('rvest')
 base_url = 'https://www.nflpenalties.com/phase.php?year='
 
 # a list of valid years
-years = c('2009','2010','2011','2012','2013', '2014','2015','2016','2017','2018')
+years = c('2009','2010','2011','2012','2013', '2014','2015','2016','2017','2018', '2019')
 
 #########################
 ####    EXECUTION    ####
 #########################
 
-file_name = 'by_team_group.xlsx'
+file_name = 'data/by_team_group.xlsx'
 
 # create a blank workbook
 wb <- createWorkbook()

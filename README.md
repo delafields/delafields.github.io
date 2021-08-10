@@ -30,7 +30,7 @@ Link to project [here](movie-budgets/README.md)
 ### NFL Penalties 🏈
 **Do the refs play favorites? How have penalties changed year over year?** <sub><sup>(R, tidyverse)</sup></sub>
 
-Scraped data on NFL penalties from 2009-2018 (as found on [nflpenalties.com](https://www.nflpenalties.com/)). Contains data on specific penalties (false start, holding etc.) & penalties by phase of the game (OFF/DEF/ST).
+Scraped data on NFL penalties from 2009-2019 (as found on [nflpenalties.com](https://www.nflpenalties.com/)). Contains data on specific penalties (false start, holding etc.) & penalties by phase of the game (OFF/DEF/ST).
 
 Link to project [here](nfl-penalties/README.md)
 
