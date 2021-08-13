@@ -7,12 +7,10 @@ if (!require('openxlsx')) install.packages('openxlsx')
 library('openxlsx')
 if (!require('rvest')) install.packages('rvest')
 library('rvest')
-library(tidyr)
-library(dplyr)
 
-# WINS PER YEAR
+# BY OFF DEF ST
 
-base_url = 'https://www.teamrankings.com/nfl/trends/win_trends/?range=yearly_'
+base_url = 'https://www.nflpenalties.com/phase.php?year='
 
 # a list of valid years
 years = c('2009','2010','2011','2012','2013', '2014','2015','2016','2017','2018', '2019')
@@ -21,7 +19,7 @@ years = c('2009','2010','2011','2012','2013', '2014','2015','2016','2017','2018'
 ####    EXECUTION    ####
 #########################
 
-file_name = 'data/wins_per_year.xlsx'
+file_name = 'by_team_group.xlsx'
 
 # create a blank workbook
 wb <- createWorkbook()
@@ -39,8 +37,7 @@ for (year in years) {
   # select the only table in the html
   table <- data %>%
     html_node("table") %>%
-    html_table() %>% 
-    separate("Win-Loss Record", c("Wins", "Losses", "Draws"), sep="-")
+    html_table()
   
   # create sheet
   addWorksheet(wb, year)
