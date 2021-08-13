@@ -20,19 +20,20 @@ Contains transfer data and team points totals for the English Premier League fro
 
 I analyzed the overall trends of the EPL transfer market [here](epl-transfers/OverallAnalysis.md) and analyzed if higher spending equates to more wins [here](epl-transfers/Analysis.md). Link to full project and more cool plots [here](epl-transfers/README.md).
 
+### NFL Penalties 🏈
+**Do the refs play favorites? How have penalties changed year over year?** <sub><sup>(R, tidyverse)</sup></sub>
+![Cumulative Penalties](nfl-penalties/plots/cumulative_penalties.png)
+
+Scraped data on NFL penalties from 2009-2019 (as found on [nflpenalties.com](https://www.nflpenalties.com/)). Contains data on specific penalties (false start, holding etc.) & penalties by phase of the game (OFF/DEF/ST).
+
+Analysis on some common penalty questions [here](nfl-penalties/Analysis.md). Link to project [here](nfl-penalties/README.md)
+
 ### Movie budgets 🎥
 **Who were the small budget cash cows? What actors rake in the most?** <sub><sup>(Python, BeautifulSoup)</sup></sub>
 
 Scraped data on the top 5000ish highest budget movies ever (as found on [the-numbers.com](https://www.the-numbers.com/movie/budgets/all)). Contains not only data around budget/profit but metadata like: Directors/actors of said movies, theater count, genre, story source (comic, novel etc) and more.
 
 Link to project [here](movie-budgets/README.md)
-
-### NFL Penalties 🏈
-**Do the refs play favorites? How have penalties changed year over year?** <sub><sup>(R, tidyverse)</sup></sub>
-
-Scraped data on NFL penalties from 2009-2019 (as found on [nflpenalties.com](https://www.nflpenalties.com/)). Contains data on specific penalties (false start, holding etc.) & penalties by phase of the game (OFF/DEF/ST).
-
-Link to project [here](nfl-penalties/README.md)
 
 ### Company Colors 🎨
 **Do industries have design relationships?** <sub><sup>(Python, BeautifulSoup, Selenium)</sup></sub>
