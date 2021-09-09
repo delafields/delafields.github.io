@@ -51,6 +51,14 @@ Link to project [here](big4league-attendance/README.md)
 
 <br/>
 
+## ML/DL
+### Song Title Generator
+Using GPT-2 to generate song titles (In progress)
+
+Link to project [here](gpt2_song_title_generator/README.md)
+
+<br/>
+
 ## Data Visualizations
 
 **[500 Jump Scares](https://www.reddit.com/r/dataisbeautiful/comments/dei68x/battle_dataviz_battle_for_the_month_of_october/f3vp452/?utm_source=share&utm_medium=web2x), my viz that won the October 2019 r/dataisbeautiful [competition](https://www.reddit.com/r/dataisbeautiful/comments/drgz68/battle_dataviz_battle_for_the_month_of_november/)**
