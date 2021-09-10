@@ -28,6 +28,43 @@ Scraped data on NFL penalties from 2009-2019 (as found on [nflpenalties.com](htt
 
 Analysis on some common penalty questions [here](nfl-penalties/Analysis.md). Link to project [here](nfl-penalties/README.md)
 
+<br/>
+
+## ML/DL/Stats
+### JokePT2
+Creating an insulting robot (In progress)
+
+Link to project [here](JokePT2/README.md)
+
+### Simulating EPL games
+Using Monte Carlo simulations to predict the result of EPL games
+
+Link to project [here](epl-monte-carlo/README.md)
+
+## Projecting the livestock market
+
+Link to project [here](who-has-the-meats/README.md)
+
+<br/>
+
+## Data Visualizations
+
+**[500 Jump Scares](https://www.reddit.com/r/dataisbeautiful/comments/dei68x/battle_dataviz_battle_for_the_month_of_october/f3vp452/?utm_source=share&utm_medium=web2x), my viz that won the October 2019 r/dataisbeautiful [competition](https://www.reddit.com/r/dataisbeautiful/comments/drgz68/battle_dataviz_battle_for_the_month_of_november/)**
+
+![2019's Scaries](visualizations/500jumps/plots/scary_dots.png)
+
+This was created for the October 2019 r/DataIsBeautiful DataViz Battle which centered around visualizing the Jump-Scares for over 500 horror, thriller, and sci-fi movies. I chose to only include 2019 here as this visualization lends itself to a smaller subset of data. Inspired by [aaron penne](https://github.com/aaronpenne/data_visualization/blob/master/ceo_compensation/dot_pairs_ceo_compensation.py)'s dot pairs viz.
+
+![All Scaries](visualizations/500jumps/plots/scary_swarm.png)
+
+This chart shows a larger trend: More jump scares = a higher jump scare rating. Eyeballing the colors alone, it seems that less jumps (count and rating) translates to a higher IMDB score. **Note: this was the winner.**
+
+Code: 2019 dot-pair [here](visualizations/500jumps/scary_dots.py) and all-movie swarm plot [here](visualizations/500jumps/scary_swarm.py).
+
+<br/>
+
+## Data Pulls
+
 ### Movie budgets 🎥
 **Who were the small budget cash cows? What actors rake in the most?** <sub><sup>(Python, BeautifulSoup)</sup></sub>
 
@@ -49,32 +86,6 @@ Contains attendance data for the Big 4 US sports leagues from 2001-2019 (NBA, NF
 
 Link to project [here](big4league-attendance/README.md)
 
-<br/>
-
-## ML/DL
-### Song Title Generator
-Using GPT-2 to generate song titles (In progress)
-
-Link to project [here](gpt2_song_title_generator/README.md)
-
-<br/>
-
-## Data Visualizations
-
-**[500 Jump Scares](https://www.reddit.com/r/dataisbeautiful/comments/dei68x/battle_dataviz_battle_for_the_month_of_october/f3vp452/?utm_source=share&utm_medium=web2x), my viz that won the October 2019 r/dataisbeautiful [competition](https://www.reddit.com/r/dataisbeautiful/comments/drgz68/battle_dataviz_battle_for_the_month_of_november/)**
-
-![2019's Scaries](visualizations/500jumps/plots/scary_dots.png)
-
-This was created for the October 2019 r/DataIsBeautiful DataViz Battle which centered around visualizing the Jump-Scares for over 500 horror, thriller, and sci-fi movies. I chose to only include 2019 here as this visualization lends itself to a smaller subset of data. Inspired by [aaron penne](https://github.com/aaronpenne/data_visualization/blob/master/ceo_compensation/dot_pairs_ceo_compensation.py)'s dot pairs viz.
-
-![All Scaries](visualizations/500jumps/plots/scary_swarm.png)
-
-This chart shows a larger trend: More jump scares = a higher jump scare rating. Eyeballing the colors alone, it seems that less jumps (count and rating) translates to a higher IMDB score. **Note: this was the winner.**
-
-Code: 2019 dot-pair [here](visualizations/500jumps/scary_dots.py) and all-movie swarm plot [here](visualizations/500jumps/scary_swarm.py).
-
-<br/>
-
 ## Kaggle kernels
 
 ### Categorical Feature Encoding Challenge
@@ -87,5 +98,3 @@ This challenge involved taking a data set solely comprised of categorical featur
 
 ### Favoritify
 Not Data Science in the traditional sense (honestly more of a front-end project) but I created this React app, [Favoritify](https://favoritify.herokuapp.com/), that polls the Spotify API for a user's top music and displays a personalized dashboard of visualizations. Includes top tracks/genres/artists, how popular they are globally on average, the typical auditory features of your music, and more. [Code here](https://github.com/delafields/Favoritify). *Not being monitored - if broken please send me a note. That being said, please give it a try!*
-
-## Kaggle competitions
