@@ -68,7 +68,7 @@ all_club_stats <- all_clubs %>%
   }, epl)
 
 #### Example of the simulation ####
-## Get Pts For, Pts Against, and SD of Pts For, for the two teams of interest
+## Get goals for, goals against, xg for, xg against, and SD of goals/xg for, for the two teams of interest
 
 team1 <- "Arsenal"
 team2 <- "Tottenham"
@@ -86,3 +86,68 @@ tm2_sd_gf <- all_club_stats[all_club_stats$club == team2, "gf_sd"]
 tm2_xgf <- all_club_stats[all_club_stats$club == team2, "xgf"]
 tm2_xga <- all_club_stats[all_club_stats$club == team2, "xga"]
 tm2_sd_xgf <- all_club_stats[all_club_stats$club == team2, "xgf_sd"]
+
+# adjust goals and xG for both clubs based on opponent points against
+tm1_adj_goals <- sqrt(tm1_gf * tm2_ga)
+tm2_adj_goals <- sqrt(tm2_gf * tm1_ga)
+
+tm1_adj_xg <- sqrt(tm1_xgf * tm2_xga)
+tm2_adj_xg <- sqrt(tm2_xgf * tm1_xga)
+
+# SIMULATIONS
+
+# TODO: plot goals and xg to see correct distribution to sample from
+
+# simulated goals for club 1
+qnorm(
+  runif(1), # maybe poisson here
+  mean = tm1_adj_goals,
+  sd = tm1_sd_gf
+)
+
+# run the simulation 10,000 times to get the probability that one team outscores the other
+N <- 10000
+outcome <- vector("character", length = N)
+
+for (i in 1:N) {
+  d <- qnorm(runif(1), mean = tm1_adj_goals, sd = tm1_sd_gf) - qnorm(runif(1), mean = tm2_adj_goals, sd = tm2_sd_gf)
+  d <- ifelse(d > 0, team1, team2)
+  
+  outcome[i] <- d
+}
+
+# plot outcomes
+table(outcome)
+prop.table(table(outcome))
+barplot(prop.table(table(outcome)))
+
+# RUN SIMULATION WITH GOAL SPREAD
+simulate_game <- function(tm1_mean, tm1_sd, tm2_mean, t2_sd) {
+  tm1 <- qnorm(runif(1), mean = tm1_adj_goals, sd = tm1_sd_gf)
+  tm2 <- qnorm(runif(1), mean = tm2_adj_goals, sd = tm2_sd_gf)
+  
+  data.frame(
+    tm1 = tm1,
+    tm2 = tm2,
+    goal_diff = tm1 - tm2,
+    winner = ifelse(tm1 > tm2, "tm1", "tm2")
+  )
+}
+
+# run simulation N times
+simulated_games <- seq_len(N) %>% 
+  map_dfr(
+    ~simulate_game(
+      tm1_adj_goals, tm1_sd_gf,
+      tm2_adj_goals, tm2_sd_gf
+    )
+  )
+
+head(simulated_games)
+
+hist(simulated_games$goal_diff, col = "blue")
+abline(v = mean(simulated_games$goal_diff), col = "red", lty = "dashed", lwd = 4)
+
+quantile(simulated_games$goal_diff)
+
+mean(simulated_games$goal_diff)
