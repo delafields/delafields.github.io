@@ -18,7 +18,7 @@ test <- html_page %>%
 
 mean(test$avg_goals_per_team)
 
-# pull avg goals per game
+# pull avg goals per game per team over the last 10 epl seasons
 num_seasons <- 10
 yearly_goal_averages <- vector("character", length = num_seasons)
 
@@ -57,6 +57,13 @@ prem_goals <-  urls %>%
     ~get_goal_average(.x)
   )
 
+par(mfrow=c(2, 1))
+par(mar=c(1,1,1,1))
+
 # plot average goal distribution
 hist(prem_goals$avg_goals_per_team, breaks=12, col="red")
+
 # the above almost certainly points to a poisson distribution
+
+#create plot of probability mass function
+plot(dpois(x=0:5, lambda = 1), type="l")
