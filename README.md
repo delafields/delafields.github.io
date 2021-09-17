@@ -30,20 +30,17 @@ Analysis on some common penalty questions [here](nfl-penalties/Analysis.md). Lin
 
 <br/>
 
-## ML/DL/Stats
+## Experiments in ML/DL/Stats
 ### JokePT2
-Creating an insulting robot (In progress)
-
-Link to project [here](JokePT2/README.md)
+Creating an insulting robot (In progress) [here](JokePT2/README.md)
 
 ### Simulating EPL games
-Using Monte Carlo simulations to predict the result of EPL games
+Using Monte Carlo simulations to predict the result of EPL games [here](epl-monte-carlo/README.md)
 
-Link to project [here](epl-monte-carlo/README.md)
+### Forecasting congressional trading
 
-## Projecting the livestock market
-
-Link to project [here](who-has-the-meats/README.md)
+I used [prophet](https://facebook.github.io/prophet/) to try to forecast the trend of days between transaction and disclosure dates of senate stock trading [here](who-has-the-meats/README.md)
+![transaction time series](congress-trades/plots/txns_ts.png)
 
 <br/>
 
