@@ -18,6 +18,4 @@ models
 old*
 .idea
 **Icon*
-finetune.py
-gpt-2-simple
-secret.py
+aitextgen
