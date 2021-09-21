@@ -32,7 +32,11 @@ Analysis on some common penalty questions [here](nfl-penalties/Analysis.md). Lin
 
 ## Experiments in ML/DL/Stats
 ### JokePT2
-Creating an insulting robot (In progress) [here](JokePT2/README.md)
+Poorly training GPT-2 on weird text [here](JokePT2/README.md)
+* On a Charles Manson interview
+    > I am against killing the penitentiary
+* On Yo momma jokes
+    > Yo momma is so ugly that just after she was born, the doctor slapped her face
 
 ### Simulating EPL games
 Using Monte Carlo simulations to predict the result of EPL games [here](epl-monte-carlo/README.md)
